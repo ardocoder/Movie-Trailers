@@ -1,0 +1,227 @@
+@import '~font-awesome/css/font-awesome.css';
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Text+Me+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+
+* {
+    padding             : 0px; 
+    margin              : 0px;
+    box-sizing          : border-box;
+    color               : white;
+}
+
+body {
+    background-image    : linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)),url(../../media/background.jpg);
+    background-position : center; 
+    background-repeat   : no-repeat;
+    background-size     : cover;
+}
+
+.clearfix::after {
+    content             : "";
+    display             : table;
+    clear               : both;
+}
+
+.content-header {
+    padding             : 0px 0px;
+    background-color    : white;
+}
+
+.header-left {
+    padding             : 0px 0px;
+    float               : left;
+    width               : 50%;
+}
+
+.header-left h1 {
+    font-family         : 'Permanent Marker', cursive;
+    color               : black;
+    font-size           : 2.5em;
+    font-style          : italic;
+}
+
+.text-animation {
+    width               : 100%;
+    white-space         : nowrap;
+    overflow            : hidden;
+    -webkit-animation   : typing 7s steps(100, end);
+    -moz-animation      : typing 7s steps(100, end);
+    -ms-animation       : typing 7s steps(100, end);
+    -o-animation        : typing 7s steps(100, end);
+    animation           : type-animation 7s steps(100, end);
+  }
+
+  @keyframes type-animation {
+    from { width: 0; }
+  }
+
+  @-webkit-keyframes type-animation {
+    from { width: 0; }
+  }
+
+.header-right {
+    float               : right;
+    font-family         : 'Raleway', sans-serif;
+    font-size           : 1.2em;
+    font-weight         : bold;
+    width               : 40%;
+}
+
+.header-btn {
+    text-decoration     : none !important;
+    border-radius       : 30px;
+    padding             : 7px 20px;
+    float               : right;
+    margin-top          : 10px;
+    margin-left         : 50rem;;
+    color               : #fff !important;
+    background          : #107afd;
+    font-weight         : 700;
+}
+
+.content-middle {
+    margin-top          : 85px;
+	height		        : 300px;
+    color               : white;
+	text-align	        : center;
+    padding             : 0px 0px;
+    font-family         : 'Ubuntu', sans-serif;
+}
+
+.content-middle img:hover {
+    transform           : none;
+    cursor              : default;
+}
+
+.form-group {
+    margin-bottom       : 1rem;
+    text-align          : center;
+}
+
+#inputValue {
+    width               : 769px;
+    padding             : .375rem .75rem;
+    font-size           : 1rem;
+    font-weight         : 400;
+    line-height         : 1.5;
+    outline             : none;
+    color               : #495057;
+    background-color    : #fff;
+    border              : 1px solid #ced4da;
+    border-radius       : .25rem;
+}
+
+#movies-searchable {
+    margin-top          : 20px;
+    margin-bottom       : 50px;
+}
+
+.movie {
+    margin-bottom       : 50px;
+}
+
+section {
+    display             : flex;
+    width               : 100%;
+    overflow-x          : auto;
+}
+
+section img {
+    width               : 300px;
+    transition          : 250ms all;
+}
+
+img:hover {
+    margin-top          : 0 40px;
+    transform           : scale(1.2);
+    cursor              : pointer;
+}
+
+.content {
+    border              : 1px solid lightgrey;
+    padding             : 20px;
+    display             : none;
+}
+
+#content-close {
+    cursor              : pointer;
+    color               : white;
+    padding             : 5px;
+    background-color    : red;
+    position            : absolute;
+    font-weight         : bolder;
+    border              : 1px solid gray;
+    border-radius       : 45%;
+}
+
+.content div {
+    display             : flex;
+    justify-content     : space-around;
+    flex-wrap           : wrap;
+    align-items         : center;
+    margin              : 10px;
+}
+
+.content-display {
+    display             : block;
+}
+
+.content-footer {
+    margin-top          : 230px;
+	height		        : 132px;
+    padding             : 0px 0px;
+    background-color    : white;
+}
+
+.footer-left {
+    float               : left;
+    margin-bottom       : 20px;
+    font-size           : 20px;
+    padding-right       : 50px;
+    width               : 50%;
+    text-align          : center;
+}
+
+.footer-left h3 {
+    padding             : 10px;
+    font-family         : 'Fredoka One', cursive;
+    color               : black;
+    font-size           : 1.5em;
+    font-style          : italic;
+    font-variant        : small-caps
+}
+
+.footer-left a {
+    text-decoration     : none;
+}
+
+.fa {
+    padding             : 20px;
+    font-size           : 30px;
+    width               : 50px;
+    text-decoration     : none;
+    color               :brown;
+    padding             : 10px;
+    border              : 1px solid brown;
+    margin              : 0px 8px;
+}
+
+.footer-right {
+    float		        : right;
+    width               : 40%;
+}
+
+audio {
+    margin-top          : 35px;
+    margin-left         : 0px;
+}
+
+.footer-right p {
+    font-family         : 'Text Me One', sans-serif;
+    font-size           : 1em;
+    color               : black;
+    padding             : 5px 85px;
+}
